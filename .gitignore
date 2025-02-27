@@ -1,0 +1,116 @@
+# Python
+*.py[cod]
+__pycache__/
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Django
+*.log
+*.pot
+*.pyc
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+local_settings.py
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.env
+.venv
+env.bak/
+venv.bak/
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+.history/
+
+# IDE - PyCharm
+.idea/
+*.iml
+*.iws
+.idea_modules/
+
+# Uploaded files
+media/product_images/
+media/uploads/
+
+# Frontend build
+node_modules/
+/frontend/build
+.next/
+out/
+build/
+.DS_Store
+*.pem
+.env*.local
+
+# Debug
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.coverage.*
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Django Debug Toolbar
+debug_toolbar/
+
+# Database backups
+*.dump
+*.sql
+*.sqlite3-*
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Project specific
+core/media/product_images/*
+!core/media/product_images/.gitkeep
+core/staticfiles/*
+!core/staticfiles/.gitkeep
+
+# Temporary files
+*.swp
+*.swo
+*~
+.~*
+
+# Environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Cache
+.cache/
+.pytest_cache/
+*.py[cod]
+__pycache__/ 
