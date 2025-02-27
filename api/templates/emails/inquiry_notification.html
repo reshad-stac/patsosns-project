@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { padding: 20px; }
+        .header { color: #333; }
+        .details { margin: 20px 0; }
+        .message { background: #f5f5f5; padding: 15px; border-radius: 5px; }
+        .products { margin-top: 20px; }
+        .product { border-bottom: 1px solid #eee; padding: 10px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="header">New Product Inquiry</h2>
+        <div class="details">
+            <p><strong>Name:</strong> {{ name }}</p>
+            <p><strong>Email:</strong> {{ email }}</p>
+            <p><strong>Subject:</strong> {{ subject }}</p>
+            <p><strong>Submitted at:</strong> {{ created_at }}</p>
+        </div>
+        <div class="message">
+            <h3>Message:</h3>
+            <p>{{ message }}</p>
+        </div>
+        <div class="products">
+            <h3>Inquired Products:</h3>
+            {% for product in products %}
+            <div class="product">
+                <p><strong>Name:</strong> {{ product.name }}</p>
+                <p><strong>Style Number:</strong> {{ product.style_number }}</p>
+                <p><strong>Price:</strong> ${{ product.price }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html> 
